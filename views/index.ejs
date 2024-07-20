@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title> GameBridge</title>
+</head>
+<body>
+
+    <nav>
+        <div class="site-title">
+            <a herf="/"><h1>GameBridge</h1></a>
+            <p>Welcome to the Gamebridge Research and Development Portal, your premier destination for publishing, collaborating, and sharing research papers on the transformative potential of gaming skills.</p>
+        </div>
+        <u1>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="/publish">Publish</a></li>
+            <li><a href="/share">Share</a></li>
+            <li><a href="/collaborate">Collaborate</a></li>
+        </u1>
+    </nav>
+
+
+
+
+
+
+
+      
+    <div class="reseearch papers">
+        <h2>All Research papers</h2>
+
+        <% if (rps.length >0) { %>
+            <% rps.forEach(rps=> { %>
+
+                <h3 class="title"><%= rps.title %></h3>
+                <p class="snippet"><%= rps.snippet %></p> 
+
+            <% }) %>
+        <% } else { %>
+            <p> There are no research papers to display</p>
+            <% } %>
+</div> 
+</body>
+</html>
